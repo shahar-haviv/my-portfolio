@@ -3,14 +3,29 @@
   X-Frame-Options: DENY
   X-XSS-Protection: 1; mode=block
 
-/*.js
+/assets/*.js
   Content-Type: application/javascript
 
-/*.css
+/assets/*.mjs
+  Content-Type: application/javascript
+
+/assets/*.css
   Content-Type: text/css
 
-/*.svg
+/assets/*.svg
   Content-Type: image/svg+xml
 
-/*.html
+*.js
+  Content-Type: application/javascript
+
+*.mjs
+  Content-Type: application/javascript
+
+*.css
+  Content-Type: text/css
+
+*.svg
+  Content-Type: image/svg+xml
+
+*.html
   Content-Type: text/html
