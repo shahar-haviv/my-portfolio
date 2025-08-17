@@ -1,6 +1,5 @@
 
 import './App.css'
-import AboutButton from "./components/AboutButton";
 import ScrollAnimation from "./components/ScrollAnimation";
 import Navigation from "./components/Navigation";
 
