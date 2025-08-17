@@ -7,8 +7,6 @@ import Navigation from "./components/Navigation";
 function App() {
   return (
     <div className="min-h-screen bg-[url('/src/assets/bg16.svg')] bg-cover bg-fixed">
-      {/* Top-left About Me button */}
-      <AboutButton />
 
       {/* Right-side Navigation */}
       <Navigation />
@@ -36,12 +34,13 @@ function App() {
           <h2 className="text-6xl font-bold text-white mb-12 font-heebo">About Me</h2>
           <div className="bg-black/20 backdrop-blur-sm rounded-3xl p-12 border border-white/20">
             <p className="text-xl text-white/90 leading-relaxed mb-8">
-              I'm a passionate Backend Engineer with expertise in building scalable, high-performance systems. 
-              I love solving complex problems and creating robust solutions that power modern applications.
+              Backend Engineer experienced in building and optimizing large-scale
+              cloud systems. Skilled in TypeScript, Clojure, Python, and cloud
+              infrastructure.
             </p>
             <p className="text-xl text-white/90 leading-relaxed">
-              When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, 
-              or sharing knowledge with the developer community.
+              Thrives under pressure, highly adaptable, and proven to
+              deliver results in both individual and team settings.
             </p>
           </div>
         </div>
@@ -53,10 +52,10 @@ function App() {
           <h2 className="text-6xl font-bold text-white mb-16 font-heebo">Skills & Technologies</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
-              { title: "Backend Development", skills: ["Node.js", "Python", "Java", "Go"], color: "from-blue-500 to-cyan-500" },
+              { title: "Backend Development", skills: ["Node.js", "Python", "Java", "Clojure"], color: "from-blue-500 to-cyan-500" },
               { title: "Databases", skills: ["PostgreSQL", "MongoDB", "Redis", "MySQL"], color: "from-green-500 to-emerald-500" },
-              { title: "Cloud & DevOps", skills: ["AWS", "Docker", "Kubernetes", "CI/CD"], color: "from-purple-500 to-pink-500" },
-              { title: "Architecture", skills: ["Microservices", "REST APIs", "GraphQL", "Event-Driven"], color: "from-orange-500 to-red-500" },
+              { title: "Cloud & DevOps", skills: ["AWS", "AZURE", "Kubernetes", "CI/CD"], color: "from-purple-500 to-pink-500" },
+              { title: "Architecture", skills: ["Microservices", "REST APIs", "Video Streaming", "Event-Driven"], color: "from-orange-500 to-red-500" },
               { title: "Testing", skills: ["Jest", "PyTest", "Unit Testing", "Integration"], color: "from-yellow-500 to-orange-500" },
               { title: "Tools", skills: ["Git", "VS Code", "Postman", "Swagger"], color: "from-indigo-500 to-blue-500" }
             ].map((category, index) => (
@@ -82,22 +81,32 @@ function App() {
           <div className="space-y-12">
             {[
               {
-                role: "Senior Backend Engineer",
-                company: "Tech Company",
-                period: "2022 - Present",
-                description: "Leading backend development for high-traffic applications, mentoring junior developers, and implementing best practices."
+                role: "Backend Engineer",
+                company: "Reserve-8200",
+                period: "10/2023-01/2024 01/2025 - Present",
+                description: "Built and maintained a cloud backend from scratch, processing millions of files daily with high efficiency. Led key technical decisions on architecture and infrastructure, ensuring optimal performance, scalability, and reliability. Mentored and guided a team of developers, fostering best practices in coding, testing, and deployment. Coordinated cross-functional efforts to meet tight deadlines, implemented robust monitoring and alerting systems, and continuously optimized workflows to reduce latency and resource usage."
               },
               {
-                role: "Backend Developer",
-                company: "Startup",
-                period: "2020 - 2022",
-                description: "Built scalable microservices architecture and RESTful APIs for mobile and web applications."
+                role: "Backend Engineer",
+                company: "Sproutt",
+                period: "February 2023 - October 2023",
+                description: "Built and optimized a high-traffic AWS platform using TypeScript, Python, and Clojure, handling complex workloads with efficiency and scalability. Designed and implemented robust backend services, improving system performance and reliability. Collaborated with cross-functional teams to accelerate post-investment growth, enhanced monitoring and alerting systems, automated deployment pipelines, and contributed to architectural improvements that ensured speed, stability, and maintainability."
               },
               {
-                role: "Software Engineer",
-                company: "Enterprise",
-                period: "2018 - 2020",
-                description: "Developed and maintained critical business applications with focus on performance and reliability."
+                role: "Backend Engineer",
+                company: "8200",
+                period: "March 2021-January 2023",
+                description: "Developed high-scale microservices in TypeScript (NestJS) with PostgreSQL and RabbitMQ, building multiple services from scratch to support complex workflows. Designed and implemented the entire DevOps environment, including end-to-end CI/CD pipelines, automated deployments, and infrastructure provisioning. Led technical direction for the team, making key architectural decisions, mentoring developers, and ensuring best practices for performance, scalability, and reliability across all services."
+              }, {
+                role: "Backend Engineer",
+                company: "Hoodie",
+                period: "December 2021-August 2022",
+                description: "Co-developed Hoodie, a prop-tech app, using TypeScript (NestJS) and MongoDB, supported by Azure for Startups. As the company’s first developer, I architected and built core backend services from scratch, implemented critical workflows, and helped secure $25K in Azure support. This experience demonstrates my ability to take an idea from zero to a fully functioning, scalable product in an early-stage startup environment."
+              }, {
+                role: "Commander",
+                company: "IDF-bsmch",
+                period: "November 2019-March  2021",
+                description: "Served as a commander overseeing 100+ cadets, leading projects, training teams, and fostering personal and professional growth. This role was highly impactful, strengthening my leadership skills, public speaking abilities, and overall character, and shaping me into a more confident and resilient individual."
               }
             ].map((job, index) => (
               <div key={index} className="bg-black/20 backdrop-blur-sm rounded-2xl p-8 border border-white/20 text-left hover-lift">
@@ -119,7 +128,7 @@ function App() {
           <h2 className="text-6xl font-bold text-white mb-16 font-heebo">Let's Connect</h2>
           <div className="bg-black/20 backdrop-blur-sm rounded-3xl p-12 border border-white/20">
             <p className="text-xl text-white/90 mb-8">
-              I'm always interested in new opportunities and collaborations. 
+              I'm always interested in new opportunities and collaborations.
               Feel free to reach out if you'd like to work together or just want to chat about technology!
             </p>
             <div className="flex flex-wrap justify-center gap-6">

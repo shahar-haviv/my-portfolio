@@ -22,13 +22,13 @@ const Navigation: React.FC = () => {
             <li key={item.id}>
               <button
                 onClick={() => scrollToSection(item.id)}
-                className="flex items-center space-x-3 text-white/80 hover:text-white transition-colors duration-300 group"
+                className="flex items-center justify-center w-12 h-12 text-white/80 hover:text-white transition-colors duration-300 group relative"
                 title={item.label}
               >
-                <span className="text-lg group-hover:scale-110 transition-transform duration-300">
+                <span className="text-xl group-hover:scale-110 transition-transform duration-300 flex items-center justify-center">
                   {item.icon}
                 </span>
-                <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
+                <span className="absolute right-full mr-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap bg-black/60 backdrop-blur-sm px-3 py-2 rounded-lg text-sm">
                   {item.label}
                 </span>
               </button>
