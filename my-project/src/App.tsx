@@ -15,9 +15,9 @@ function App() {
       <ScrollAnimation id="hero" className="h-screen flex items-center justify-center relative">
         <div className="text-center -translate-y-14">
           <h1 className="font-heebo">
-            <span className="block text-5xl text-white">Hi, I am</span>
-            <span className="block text-9xl font-bold name-glow">Shahar</span>
-            <span className="block text-5xl text-white">Backend Engineer</span>
+            <span className="block text-3xl md:text-5xl text-white">Hi, I am</span>
+            <span className="block text-6xl md:text-9xl font-bold name-glow">Shahar</span>
+            <span className="block text-3xl md:text-5xl text-white">Backend Engineer</span>
           </h1>
           <div className="mt-8">
             <div className="w-6 h-10 border-2 border-white rounded-full mx-auto relative">
@@ -29,18 +29,17 @@ function App() {
       </ScrollAnimation>
 
       {/* About Me Section */}
-      <ScrollAnimation id="about" className="min-h-screen flex items-center justify-center px-8 py-20">
+      <ScrollAnimation id="about" className="min-h-screen flex items-center justify-center px-4 md:px-8 py-12 md:py-20">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-6xl font-bold text-white mb-12 font-heebo">About Me</h2>
-          <div className="bg-black/20 backdrop-blur-sm rounded-3xl p-12 border border-white/20">
-            <p className="text-xl text-white/90 leading-relaxed mb-8">
-              Backend Engineer experienced in building and optimizing large-scale
-              cloud systems. Skilled in TypeScript, Clojure, Python, and cloud
-              infrastructure.
+          <h2 className="text-4xl md:text-6xl font-bold text-white mb-8 md:mb-12 font-heebo">About Me</h2>
+          <div className="bg-black/20 backdrop-blur-sm rounded-2xl md:rounded-3xl p-6 md:p-12 border border-white/20">
+            <p className="text-lg md:text-xl text-white/90 leading-relaxed mb-6 md:mb-8">
+              I'm a passionate Backend Engineer with expertise in building scalable, high-performance systems. 
+              I love solving complex problems and creating robust solutions that power modern applications.
             </p>
-            <p className="text-xl text-white/90 leading-relaxed">
-              Thrives under pressure, highly adaptable, and proven to
-              deliver results in both individual and team settings.
+            <p className="text-lg md:text-xl text-white/90 leading-relaxed">
+              When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, 
+              or sharing knowledge with the developer community.
             </p>
           </div>
         </div>
@@ -139,16 +138,22 @@ function App() {
             </p>
             <div className="flex flex-wrap justify-center gap-6">
               {[
-                { name: "Email", value: "shahar.haviv125@gmail.com", icon: "📧" },
-                { name: "LinkedIn", value: "https://www.linkedin.com/in/shahar-haviv-960760255/", icon: "💼" },
-                { name: "GitHub", value: "https://github.com/shahar-haviv", icon: "🐙" },
+                { name: "Email", value: "shahar.haviv125@gmail.com", icon: "📧", link: "mailto:shahar.haviv125@gmail.com" },
+                { name: "LinkedIn", value: "https://www.linkedin.com/in/shahar-haviv-960760255/", icon: "💼", link: "https://www.linkedin.com/in/shahar-haviv-960760255/" },
+                { name: "GitHub", value: "https://github.com/shahar-haviv", icon: "🐙", link: "https://github.com/shahar-haviv" },
                 // { name: "Twitter", value: "@shahar_dev", icon: "🐦" }
               ].map((contact, index) => (
-                <div key={index} className="bg-black/20 backdrop-blur-sm rounded-xl p-6 hover:bg-white/20 transition-colors duration-300 hover-lift">
+                <a
+                  key={index}
+                  href={contact.link}
+                  target={contact.link?.startsWith('http') ? "_blank" : undefined}
+                  rel={contact.link?.startsWith('http') ? "noopener noreferrer" : undefined}
+                  className="bg-black/20 backdrop-blur-sm rounded-xl p-6 hover:bg-white/20 transition-colors duration-300 hover-lift cursor-pointer"
+                >
                   <div className="text-4xl mb-2">{contact.icon}</div>
                   <div className="text-white font-semibold">{contact.name}</div>
                   <div className="text-white/80">{contact.value}</div>
-                </div>
+                </a>
               ))}
             </div>
           </div>
