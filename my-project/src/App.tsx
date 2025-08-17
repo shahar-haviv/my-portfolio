@@ -139,10 +139,10 @@ function App() {
             </p>
             <div className="flex flex-wrap justify-center gap-6">
               {[
-                { name: "Email", value: "shahar@example.com", icon: "📧" },
-                { name: "LinkedIn", value: "linkedin.com/in/shahar", icon: "💼" },
-                { name: "GitHub", value: "github.com/shahar", icon: "🐙" },
-                { name: "Twitter", value: "@shahar_dev", icon: "🐦" }
+                { name: "Email", value: "shahar.haviv125@gmail.com", icon: "📧" },
+                { name: "LinkedIn", value: "https://www.linkedin.com/in/shahar-haviv-960760255/", icon: "💼" },
+                { name: "GitHub", value: "https://github.com/shahar-haviv", icon: "🐙" },
+                // { name: "Twitter", value: "@shahar_dev", icon: "🐦" }
               ].map((contact, index) => (
                 <div key={index} className="bg-black/20 backdrop-blur-sm rounded-xl p-6 hover:bg-white/20 transition-colors duration-300 hover-lift">
                   <div className="text-4xl mb-2">{contact.icon}</div>
