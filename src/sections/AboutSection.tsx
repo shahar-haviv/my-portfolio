@@ -7,12 +7,10 @@ const AboutSection = () => {
 				<h2 className="text-4xl md:text-6xl font-bold text-white mb-8 md:mb-12 font-heebo">About Me</h2>
 				<div className="bg-black/20 backdrop-blur-sm rounded-2xl md:rounded-3xl p-6 md:p-12 border border-white/20">
 					<p className="text-lg md:text-xl text-white/90 leading-relaxed mb-6 md:mb-8">
-						I'm a passionate Backend Engineer with expertise in building scalable, high-performance systems. 
-						I love solving complex problems and creating robust solutions that power modern applications.
-					</p>
-					<p className="text-lg md:text-xl text-white/90 leading-relaxed">
-						When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, 
-						or sharing knowledge with the developer community.
+						Backend Engineer with over 4 years of experience designing, building, and optimizing large-scale cloud systems.
+						Skilled in TypeScript, Clojure, and Python, with hands-on expertise in both AWS and Azure environments.
+						Proven track record of developing scalable backend services, improving system performance, and supporting high-traffic platforms.
+						Experienced working in fast-paced settings, mentoring developers, and contributing to architectural decisions that enhance reliability and speed.
 					</p>
 				</div>
 			</div>
