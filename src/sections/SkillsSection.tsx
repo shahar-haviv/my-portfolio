@@ -119,7 +119,7 @@ const SkillsSection = () => {
       className="min-h-screen flex flex-col items-center justify-center px-8 py-20"
     >
       <div className="max-w-7xl w-full text-center">
-        <h2 className="text-6xl font-bold text-white mb-16 font-heebo">
+        <h2 className="text-6xl font-bold mb-16 font-heebo bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">
           Tech Stack
         </h2>
 

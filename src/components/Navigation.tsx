@@ -45,8 +45,8 @@ const Navigation: React.FC = () => {
           {[
             { id: 'hero', label: 'Home', icon: '🏠' },
             { id: 'about', label: 'About', icon: '👤' },
-            { id: 'skills', label: 'Skills', icon: '⚡' },
             { id: 'experience', label: 'Experience', icon: '💼' },
+            { id: 'tech-stack', label: 'Tech', icon: '⚡' },
             { id: 'contact', label: 'Contact', icon: '📧' }
           ].map((item) => (
             <li key={item.id}>
