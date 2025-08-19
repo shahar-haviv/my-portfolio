@@ -96,17 +96,24 @@ const SkillsSection = () => {
           </h3>
           <div className="flex flex-wrap justify-center gap-4">
             {category.items.map((tech, idx) => (
-              <div
-                key={idx}
-                className="bg-white/10 backdrop-blur-lg rounded-xl p-3 flex items-center justify-center border border-white/20 hover:scale-110 transition-transform duration-300"
-              >
-                <img
-                  src={tech.icon}
-                  alt={tech.name}
-                  className="w-10 h-10 object-contain"
-                />
+              <div key={idx} className="relative group">
+                <div
+                  className="bg-white/10 backdrop-blur-lg rounded-xl p-3 flex items-center justify-center border border-white/20 hover:scale-110 transition-transform duration-300"
+                >
+                  <img
+                    src={tech.icon}
+                    alt={tech.name}
+                    className="w-10 h-10 object-contain"
+                  />
+                </div>
+                {/* Tooltip */}
+                <span className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-2 py-1 bg-white text-black font-bold text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
+                  {tech.name}
+                </span>
               </div>
             ))}
+
+
           </div>
         </div>
       ))}
